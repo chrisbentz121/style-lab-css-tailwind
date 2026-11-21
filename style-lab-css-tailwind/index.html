@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="STYLE LAB — Fashion & Color Studio · CSS3 ⇄ Tailwind" />
+  <title>STYLE LAB — Fashion & Color Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="sl-skip" href="#studio">Skip to content</a>
+  <header class="sl-nav" id="top">
+    <a href="#top" class="sl-logo">STYLE<i>LAB</i></a>
+    <button class="sl-burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav id="nav">
+      <a href="#studio">Studio</a><a href="#colour">Colour</a><a href="#finder">Finder</a><a href="#gallery">Gallery</a>
+      <a href="#inspiration">Inspiration</a><a href="#about">About</a><a href="#atelier">Code</a>
+    </nav>
+  </header>
+  <main>
+    <section class="sl-hero">
+      <div>
+        <p class="sl-kicker uppercase tracking-wider">Fashion &amp; Colour Studio · SS/26</p>
+        <h1>Dress <em>the</em> colour.</h1>
+        <p>Build outfits, find the shades that love your skin and discover the style that is already yours.</p>
+        <a class="sl-btn" href="#studio">Start styling</a>
+      </div>
+      <div class="sl-art" aria-hidden="true"><i></i><i></i><i></i><b>No.<br />26</b></div>
+    </section>
+    <section id="studio" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">01 / Outfit Studio</p><h2>Compose your look</h2><div id="studio-box" class="sl-studio"></div></section>
+    <section id="colour" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">02 / Colorimetry</p><h2>Find your palette</h2>
+      <div class="sl-two">
+        <div><label class="sl-lab">Base colour <input type="color" id="base" value="#6d1f2f" /></label><div class="sl-row" id="harm"></div><div class="sl-sws" id="harm-sws"></div></div>
+        <div><p class="sl-kicker">Your undertone</p><div class="sl-row" id="tone"></div><p id="tone-note"></p><div class="sl-sws" id="tone-sws"></div></div>
+      </div>
+    </section>
+    <section id="finder" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">03 / Style Finder</p><h2>Which style is yours?</h2><div id="finder-box"></div></section>
+    <section id="gallery" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">04 / Gallery</p><h2>Outfit gallery</h2><div class="sl-row" id="filters"></div><p class="sl-kicker" id="count" aria-live="polite"></p><div class="sl-gal" id="gal"></div></section>
+    <section id="inspiration" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">05 / Inspiration</p><h2>Trends, tips &amp; combos</h2><div class="sl-row" id="tabs"></div><div class="sl-cards" id="tips"></div></section>
+    <section id="about" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">06 / About &amp; Contact</p><h2>Designed &amp; built by hand</h2>
+      <div class="sl-two">
+        <p>STYLE LAB is a portfolio piece by a designer-developer: interface design, front-end engineering and colour systems in one static project (HTML + CSS + JavaScript). Replace this text with your own story.</p>
+        <form id="contact"><label class="sl-lab">Name<input name="name" required /></label><label class="sl-lab">Email<input name="email" type="email" required /></label><label class="sl-lab">Message<textarea name="message" rows="4" required></textarea></label><button class="sl-btn">Send</button><p role="status" id="msg"></p></form>
+      </div>
+    </section>
+    <section id="atelier" class="sl-sec"><p class="sl-kicker uppercase tracking-wider">07 / Code Atelier</p><h2>Every code, worn live</h2>
+      <p id="atelier-info"></p>
+      <div class="sl-atelier">
+        <div class="sl-stagebox" aria-label="Live preview"><figure class="sl-model" id="model"><i></i><i></i><i></i><figcaption>Look nº 07</figcaption></figure></div>
+        <div><div class="sl-row"><input type="search" id="q" aria-label="Search codes" placeholder="Search: flex, rotate, opacity…" /><button class="sl-btn" id="rnd">Random 5</button><button class="sl-btn ghost" id="clr">Clear</button></div><ul class="sl-codes" id="codes"></ul><div class="sl-row" id="more"></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="sl-foot flex justify-between"><span>STYLE LAB © 2026</span><a href="#top">Back to top ↑</a></footer>
+  <script src="js/gist-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
